@@ -7,12 +7,12 @@ import Cart from "./pages/Cart";
 import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar";
 import Login from "./pages/Login";
-import Order from "./pages/Order";
 import PlaceOrder from "./pages/PlaceOrder";
 import Product from "./pages/Product";
 import Footer from "./components/Footer";
 import SearchBar from "./components/SearchBar";
 import { ToastContainer, toast } from "react-toastify";
+import Orders from "./pages/Orders";
 
 const App = () => {
   return (
@@ -27,7 +27,7 @@ const App = () => {
         <Route path="/cart" element={<Cart />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/order" element={<Order />} />
+        <Route path="/orders" element={<Orders />} />
         <Route path="/place-order" element={<PlaceOrder />} />
         <Route path="/product/:productId" element={<Product />} />
       </Routes>
